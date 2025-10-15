@@ -47,6 +47,13 @@ app.use('*', (req, res) => {
     message: 'Route not found'
   });
 });
+// Root route for Vercel check
+app.get('/', (req, res) => {
+  res.json({
+    success: true,
+    message: 'Backend running successfully on Vercel 🚀'
+  });
+});
 
 const PORT = process.env.PORT || 5000;
 
