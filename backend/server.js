@@ -13,7 +13,7 @@ const app = express();
 // ✅ Allowed origins (your Hostinger domain + localhost)
 const allowedOrigins = [
   'https://frontend-room-woad.vercel.app/',
-  'https://marketbull.in',
+  //'https://marketbull.in',
   'http://localhost:3000'
 ];
 
